@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.App {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-container > button,
+.form-container > .ms-Dropdown-container {
+  width: 24%;
+  margin: 5px 0;
+}
+
+button {
+  align-self: flex-end;
+}
+
+.description-container {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 20px auto;
+  padding: 20px;
+  flex-direction: column;
+  width: 250px;
+}
+
+.imageDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageDescription > div {
+  align-self: flex-start;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container > button,
+  .form-container > .ms-Dropdown-container {
+    width: 48%;
+  }
+
+  .description {
+    margin: 20px auto;
+  }
+}
